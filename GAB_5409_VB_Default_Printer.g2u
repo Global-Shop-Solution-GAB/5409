@@ -1,0 +1,8 @@
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+v.Local.sFile.Declare
+f.Intrinsic.String.Build("{0}\VBScript-copy-Reg-Printers.vbs",v.Caller.PluginsDir,v.Local.sFile)
+f.Intrinsic.Task.ShellExec(v.Caller.PID,"",v.Local.sFile,"","",3)
+Program.Sub.Main.End
